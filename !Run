@@ -1,0 +1,22 @@
+<Obey$Dir>.!Boot
+|
+Set Ada2Str$Help "<Ada2Str$Dir>.!Help"
+Set Ada2Str$Version "2.03"
+Set Ada2Str$Web "http://www.arcsite.de/hp/bracke/programming/mtools.html"
+Set Ada2Str$Title "Ada2Str"
+Set Ada2Str$Publisher "Bent Bracke"
+Set Ada2Str$Description "Creates StrongHelp documentation for Ada specifications."
+|
+If "<System$Path>" = "" Then Error 0 System resources cannot be found
+WimpSlot -Min 128k -Max 128k
+
+RMEnsure SharedCLibrary 0 System:modules.clib
+RMEnsure SharedCLibrary 3.75 Error You need Clib 3.75 to run !Ada2Str
+RMEnsure FrontEnd 0 System:modules.frontend
+RMEnsure Frontend 1.13 Error You need version 1.13 of the FrontEnd module to run !Ada2Str
+RMEnsure TaskWindow 0 System:modules.task
+RMEnsure TaskWindow 0.29 Error You need version 0.29 of the taskwindow module to run !Ada2Str
+RMEnsure DDEUtils 0 System:modules.ddeutils
+RMEnsure DDEUtils 1.50 Error You need version 1.50 of the DDEUtils module to run !Ada2Str
+WimpSlot -Min 64k -Max 64k
+FrontEnd_Start -app Ada2Str -desc <Ada2Str$Dir>.desc

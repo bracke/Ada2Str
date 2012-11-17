@@ -1,0 +1,48 @@
+===============
+=   Ada2Str   =
+===============
+Ada2Str is a command line program which creates StrongHelp documentation
+for Ada specifications. It is supplied with a desktop frontend, but is
+also useable on its own.
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the
+Free Software Foundation; either version 2 of the License, or (at your
+option) any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc., 59
+Temple Place - Suite 330, Boston, MA 02111-1307, USA
+
+Contact
+=======
+mailto:bbracke@web.de
+
+Acknowledgments
+=============
+This program uses 'AdaDoc' developed by Julien Burdy and
+Vincent Decorges.
+
+Frontend use
+============
+1.Double click on the !Ada2Str icon - this will place an icon on the
+iconbar. 2.SELECT clicking on the iconbar icon will open a setup window.
+3.Fill in the information needed and SELECT click on 'Run'. Use the
+interactive help to get information about what to fill in where.
+
+This will start the Ada2Str command line program and open a window
+showing the status.
+
+Command line use
+================
+Syntax: ada2str <docname> <source dir> <target dir>
+
+All arguments are mandatory. Source and target must be directories.
+
+The AdaDoc documentation and sourcecode is available at AdaDocs project
+page on http://adadoc.sourceforge.net/

@@ -1,0 +1,13 @@
+Set Ada2Str$Dir <Obey$Dir>
+|
+Set Ada2Str$Help "<Ada2Str$Dir>.!Help"
+Set Ada2Str$Version "2.03"
+Set Ada2Str$Web "http://www.arcsite.de/hp/bracke/programming/mtools.html"
+Set Ada2Str$Title "Ada2Str"
+Set Ada2Str$Publisher "Bent Bracke"
+Set Ada2Str$Description "Creates StrongHelp documentation for Ada specifications."
+|
+Set Ada2Str$ro4 1
+RMEnsure UtilityModule 4.00 Set Ada2Str$ro4 0
+If <Ada2Str$ro4>=1 Then IconSprites <Obey$Dir>.!Sprites4 Else IconSprites <Obey$Dir>.!Sprites
+Unset Ada2Str$ro4

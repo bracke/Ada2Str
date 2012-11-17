@@ -1,0 +1,46 @@
+# StrongEd$Mode = FrontEnd
+# This is a description of the wimp interface for Ada2Str
+
+tool_details_start
+   name          "Ada2Str";
+   command_is    "<Ada2Str$Dir>.Ada2Str ";
+   version       "2.03 (2005-03-13)";
+   wimpslot       1400k;
+   has_extended_cmdline;
+tool_details_end
+
+metaoptions_start
+   #has_auto_save "RFRM_"+leafname from icn 8;
+   has_text_window;
+   display_dft_is text;
+metaoptions_end
+
+fileoutput_start
+   output_dft_is produces_output;
+fileoutput_end
+
+dbox_start
+   #icon mappings
+   icons_start
+      icn 8 maps_to string;
+      icn 6 maps_to string;
+      icn 3 maps_to string;
+   icons_end
+   
+   #default icon values
+   defaults
+      icn 3 "",
+      icn 6 "",
+      icn 8 "";
+             
+   #drags to dbox (and icon bar)
+   imports_start
+      drag_to icn 8 inserts icn 8;
+      drag_to icn 6 inserts icn 6;
+      drag_to icn 3 inserts icn 3;
+   imports_end
+dbox_end
+
+
+order_is
+  icn 3, icn 6, icn 8;
