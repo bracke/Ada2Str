@@ -4,7 +4,7 @@ Ada2Str is a command line program which creates StrongHelp documentation
 for Ada specifications. It is supplied with a desktop frontend, but is
 also useable on its own.
 
-NOTE: This is an app for RISC OS.
+NOTE: This is an app for RISC OS and will not run on other platforms.
 
 
 # Acknowledgments
