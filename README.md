@@ -28,3 +28,7 @@ All arguments are mandatory. Source and target must be directories.
 
 The AdaDoc documentation and sourcecode is available at AdaDocs project
 page on http://adadoc.sourceforge.net/
+
+## License for the frontend code (NOT AdaDoc code)
+
+MIT: <http://bracke.mit-license.org>
